@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI (Body Mass Index)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="navbar">
+            <h2>BMI (BODY  MASS INDEX)</h2> <span> &copy;2023</span>
+        </div>
+    
+        <div class="content">
+            <div class="kiri">
+                <p>     BMI (Body Mass Index) adalah angka yang digunakan untuk mengevaluasi apakah berat badan seseorang proporsional dengan tinggi badannya. Berikut adalah langkah-langkah untuk menghitung BMI: <br><br>
+
+                    Ukur Berat Badan: Timbang berat badan Anda dalam satuan kilogram (kg). Pastikan pengukuran berat badan dilakukan dengan akurat menggunakan timbangan yang tepat. <br><br>
+                    
+                    Ukur Tinggi Badan: Ukur tinggi badan Anda dalam satuan meter (cm). Pastikan pengukuran tinggi badan dilakukan dengan akurat menggunakan pengukur tinggi yang tepat. <br>
+                    
+                    Hitung BMI: Gunakan rumus berikut untuk menghitung BMI:
+                    BMI = Berat Badan (kg) / (Tinggi Badan (m) * Tinggi Badan (m)) <br><br>
+                    
+                    Interpretasikan Hasil: Setelah mendapatkan nilai BMI, Anda dapat menginterpretasikan hasilnya untuk mengetahui kategori BMI Anda. Berikut adalah kategori umum BMI: <br>
+                    <br><br>
+                    </p>
+
+                    
+                    <ul>
+                        <li>BMI di bawah 18.5: Berat badan kurang (underweight)</li>
+                        <li>BMI antara 18.5 dan 24.9: Berat badan normal (normal weight)</li>
+                        <li>BMI antara 25 dan 29.9: Kelebihan berat badan (overweight)</li>
+                        <li>BMI 30 atau lebih: Obesitas</li>
+                    </ul>
+                    <br>
+                
+                    
+                    
+                    
+                    <p>
+                    Penting untuk diingat bahwa BMI hanyalah indikator kasar dan tidak memperhitungkan faktor seperti komposisi tubuh, distribusi lemak, massa otot, dan faktor lain yang dapat mempengaruhi kesehatan. Untuk evaluasi yang lebih lengkap, konsultasikan dengan profesional kesehatan, seperti dokter atau ahli gizi.
+                </p>
+            </div>
+
+            <div class="kanan">
+                <form action="">
+                        <label for="integerInput"><h3>Berat badan (Kg)</h3> <br></label>
+                        <input type="text" id="berat"  oninput="validateInteger(this)" style="max-width: 800px; height: 50px; font-size: 30px;border-top: none;border-left: none;border-right: none;background-color: rgb(255, 255, 255, 0);">
+                </form>
+                <br><br><br>
+                <form action="">
+                    <label for="integerInput"><h3>Tinggi badan</h3> <br></label>
+                    <input type="text" id="tinggi" oninput="validateInteger(this)" style="max-width: 800px; height: 50px; font-size: 30px;border-top: none;border-left: none;border-right: none;background-color: rgb(255, 255, 255, 0);">
+                </form>
+                <br><br><br>
+                <form action="">
+                    <label for="integerInput"><h3>Usia</h3> <br></label>
+                    <input type="text" id="umur" oninput="validateInteger(this)" style="max-width: 800px; height: 50px; font-size: 30px;border-top: none;border-left: none;border-right: none;background-color: rgb(255, 255, 255, 0);">
+            </form>
+            <div class="button" onclick="proses()">Hitung BMI</div>
+            <div class="button2" onclick="reset()">Reset</div>
+            <div class="hasil">
+                <div id="nilai">0</div>
+                <div id="keterangan">masukan nilai.</div>
+                <div id="keterangan2"></div>
+                
+            </div>
+
+            </div>
+
+        </div>
+    
+        <div id="end">
+            <h3>Created By : RZKYGST 2023</h3>
+            <p>Source by BMI (BODY MASS INDEX) MEASURED</p>
+        </div>
+
+    </div>  
+
+    <script src="script.js"></script>
+</body>
+</html>
