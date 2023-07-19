@@ -141,13 +141,29 @@ body{
     color: white;
 }
 
+#gender {
+    /* width: 50px; */
+    margin-right: 0;
+    margin-bottom: 30px;
+    max-width: 20px;
+    max-height: 20px;
+    display: inline-block;
+}
+
+
+
+#labelgender {
+    margin-right: 50px;
+    font-size: 20px;
+}
+
 
 @media only screen and (min-width:300px){
     .navbar {
         padding-left: 20px;
     }
     .content .kiri {
-        padding:15px;
+        padding:20px;
         margin:5px;
         margin-bottom: 10px;
     }
@@ -164,7 +180,7 @@ body{
     .content .kiri{
         max-width: 100%;
         min-height: 300px;
-        padding: 20px 20px 20px 20px;
+        padding: 20px 40px 20px 40px;
 
     }
 
@@ -242,7 +258,7 @@ body{
         max-width: 500px;
         min-height: 600px;
         background-color: #97FEED;
-        padding: 50px 50px 50px 50px;
+        padding: 50px 40px 50px 40px;
         overflow: hidden;
         box-shadow: 2px 2px 2px 2px black;
         margin-top: 20px;
