@@ -39,16 +39,16 @@ if(umur2 != "" && nilaiberat != "" && nilaitinggi != "" && gender.checked){
     }
     else if(hasil < 18.5 ){
         keterangan.innerHTML = "BMI di bawah 18.5: Berat badan kurang (underweight)"; //menampilkan pesan jika bmmi < 18.5
-        keterangan2.innerHTML = " ";
+        keterangan2 = " ";
     }else if(hasil > 18.5 && hasil < 24.9){
         keterangan.innerHTML = "BMI antara 18.5 dan 24.9: Berat badan normal (normal weight)"; //menampilkan pesan jika bmi diantara nilai yang ditentukan
-        keterangan2.innerHTML = " ";
+        keterangan2 = " ";
     }else if(hasil > 24.9 && hasil < 29.9){
-        keterangan2.innerHTML = " ";
+        keterangan2 = " ";
         keterangan.innerHTML = "BMI antara 25 dan 29.9: Kelebihan berat badan (overweight)"; //menampikan pesan jika bmi diantara nilai yang ditentukan
     }else if(hasil >= 30){
         keterangan.innerHTML = "BMI 30 atau lebih: Obesitas"; //menampilkan pesan jika bmi lebih dari 30
-        keterangan2.innerHTML = " ";
+        keterangan2 = " ";
     }else{
         result.innerHTML = " "; //menampilkan pesan jika input belum dimasukkan tetapi sudah mulai klik hitung
         keterangan.innerHTML = "Masukan nilai dengan benar";
